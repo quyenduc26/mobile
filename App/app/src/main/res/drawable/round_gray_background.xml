@@ -1,0 +1,5 @@
+<!-- res/drawable/round_gray_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D3D3D3"/> <!-- Màu xám -->
+    <corners android:radius="250dp"/> <!-- Tạo góc tròn để hình thành hình tròn -->
+</shape>

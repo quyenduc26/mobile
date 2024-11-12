@@ -1,0 +1,136 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back button and Options -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Back button"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/optionsButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Options"
+            android:src="@drawable/ic_option" />
+    </RelativeLayout>
+
+    <!-- Image -->
+
+    <!-- Price and Title -->
+
+    <!-- Location and Description -->
+
+    <!-- Timestamp -->
+   
+
+    <!-- Buy Now Button -->
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="388dp"
+        android:layout_height="321dp"
+        android:layout_marginBottom="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/p1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/productImage"
+        app:layout_constraintVertical_bias="0.58"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="$170"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buyNowButton"
+        tools:layout_editor_absoluteX="16dp">
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera - Video  photo"
+            android:textColor="#7A7A7A"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/locationIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New York"
+                android:textColor="#7A7A7A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="8dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+            android:textColor="#7A7A7A"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buyNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#4A58EF"
+        android:text="Rent now"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

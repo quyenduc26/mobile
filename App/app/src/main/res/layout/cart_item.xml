@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Item Details Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Cột 1: Hình ảnh sản phẩm -->
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Product Image"
+            android:src="@drawable/p1" />
+
+        <!-- Cột 2: Thông tin sản phẩm và bộ điều khiển -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Tên sản phẩm -->
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Siêu xe đẳng cấp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <!-- Mô tả sản phẩm -->
+            <TextView
+                android:id="@+id/itemDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đẳng cấp số 2 thua số 1"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <!-- Mô tả sản phẩm -->
+
+            <!-- Giá sản phẩm -->
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$2.89"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Bộ điều khiển số lượng -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Nút giảm số lượng -->
+                <TextView
+                    android:id="@+id/btnMinus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/round_gray_background"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <!-- Số lượng sản phẩm -->
+                <TextView
+                    android:id="@+id/itemQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <!-- Nút tăng số lượng -->
+                <TextView
+                    android:id="@+id/btnPlus"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/round_gray_background"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Button Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Pay"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:text="Delete"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>
